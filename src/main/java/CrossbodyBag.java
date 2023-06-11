@@ -48,9 +48,14 @@ public class CrossbodyBag extends Bag {
         super.increaseCapacity(2);
     }
 
+//    @Override
+//    public String toString() {
+//        return "Crossbody " + super.toString().replace("Bag", "Bag with " + numberOfStraps + " straps");
+//    }
+
     @Override
     public String toString() {
-        System.out.println("Crossbody " + super.toString().replace("Bag", "Bag with " + numberOfStraps + " straps"));
-        return "Crossbody " + super.toString().replace("Bag", "Bag with " + numberOfStraps + " straps");
+        return this.color + " Crossbody Bag with " + numberOfStraps + " (" + this.numberOfContents + " / " +
+                this.capacity + ")";
     }
 }
