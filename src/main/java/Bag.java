@@ -29,8 +29,10 @@ public abstract class Bag {
      * its contents.)
      */
     public Bag(String color, int capacity) {
+        this.color = color;
+        this.capacity = capacity;
         this.numberOfContents = 0;
-        this.contents = null;
+        this.contents = new String[0];
     }
 
 
@@ -42,16 +44,16 @@ public abstract class Bag {
      *           - getNumberOfContents
      *           - getCapacity
      */
-    public void getColor() {
-        return this.color;
+    public String getColor() {
+        return color;
     }
 
-    public void getNumberOfContents() {
-        return this.contents;
+    public int getNumberOfContents() {
+        return contents;
     }
 
-    public void getCapacity() {
-        return this.capacity;
+    public int getCapacity() {
+        return capacity;
     }
 
     /*
