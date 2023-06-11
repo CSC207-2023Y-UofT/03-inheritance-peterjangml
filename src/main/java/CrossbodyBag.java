@@ -50,6 +50,7 @@ public class CrossbodyBag extends Bag {
 
     @Override
     public String toString() {
+        System.out.prinln("Crossbody " + super.toString().replace("Bag", "Bag with " + numberOfStraps + " straps");
         return "Crossbody " + super.toString().replace("Bag", "Bag with " + numberOfStraps + " straps");
     }
 }
