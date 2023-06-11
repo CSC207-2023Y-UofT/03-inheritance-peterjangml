@@ -46,11 +46,11 @@ public abstract class Bag {
         return this.color;
     }
 
-    public void getNumberOfContents {
+    public void getNumberOfContents() {
         return this.contents;
     }
 
-    public void getCapacity {
+    public void getCapacity() {
         return this.capacity;
     }
 
